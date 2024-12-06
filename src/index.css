@@ -1,13 +1,101 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Atma";
+  color: #333;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #db8c24;
+  cursor: pointer;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #f1356d;
+}
+.content {
+  margin: 40px auto;
+  padding: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* post preview list */
+.post-preview {
+  padding: 10px, 16px;
+  margin: 20 px 0;
+  border-bottom: 1px solid #fafafa
+}
+.post-preview:hover{
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.post-preview h2 {
+  font-size: 20px;
+  color:#db8c24;
+  margin-bottom: 8px;
+}
+.post-preview a{
+  text-decoration: none;
+}
+.post-details h2{
+  font-size: 20px;
+  color:#db8c24;
+  margin-bottom: 8px;
+}
+.post-details div{
+  margin: 20px 0;
+  
+}
+.post-details button{
+  font-size: 20px;
+  background:#db8c24;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.createPost {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.createPost label {
+  text-align: left;
+  display: block;
+}
+.createPost h2 {
+  font-size: 20px;
+  color:#db8c24;
+  margin-bottom: 30px;
+}
+.createPost input, .createPost textarea, .createPost select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.createPost button {
+  background: #db8c24;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }
