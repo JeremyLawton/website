@@ -43,8 +43,8 @@ const CreatePost = () => {
                 <select 
                 value={author}
                 onChange={(e)=>setAuthor(e.target.value)}>
-                    <option value="Gigi Murin">Gigi Murin</option>
-                    <option value="Jeremy Lawton">Jeremy Lawton</option>
+                    <option value="Jeremy">Jeremy</option>
+                    <option value="Lawton">Lawton</option>
                 </select>
                 {!isPending && <button>Add Post</button>}
                 {isPending && <button disabled>Adding Post...</button>}
