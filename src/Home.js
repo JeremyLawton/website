@@ -1,20 +1,16 @@
 
 const Home = () => {
-    const channelLink = "https://www.youtube.com/@holoen_gigimurin"
+    const channelLink = "https://youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&si=YDb0pjOlAGSmkyZ_"
     return ( 
         <div className="home">
-            <h2>Gigi Murin</h2>
-            <img src="wave.png" alt="Wave"/>
+            <h2>Sample Website Built From Following A Tutorial</h2>
+            <img src="logo192.png" alt="bigLogo"/>
             <p>
-                <a href={channelLink}>@holoen_gigimurin</a>
+                <a href={channelLink}>Tutorial Here</a>
             </p>
-            <img src="Gigi-Murin_pr-img_01-810x1440.png" alt="Wave" width={400}/>
+            <img src="logo512.png" alt="smallLogo" width={400}/>
 
-            {/* <iframe width="400" height="300" 
-            src="https://www.youtube.com/embed/sF4g-50fLz8" 
-            title="GG NOOBS!!! 😝  #holoJustice" 
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen/> */}
+            
         </div>
      );
 }

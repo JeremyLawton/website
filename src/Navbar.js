@@ -1,6 +1,6 @@
 import {Link, useHistory} from 'react-router-dom';
 const Navbar = () => {
-    const title = "Gi Murin!"
+    const title = "Hello World!"
     const history = useHistory();
     const handleClick = () =>{
         history.push("/")

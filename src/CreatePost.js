@@ -5,7 +5,7 @@ const CreatePost = () => {
 
     const [title, setTitle] = useState("");
     const [body, setBody] = useState("");
-    const [author, setAuthor] = useState("Gigi Murin");
+    const [author, setAuthor] = useState("Jeremy");
     const [isPending, setIsPending] = useState(false);
 
     const handleSubmit = (e) =>{
@@ -18,6 +18,7 @@ const CreatePost = () => {
             body: JSON.stringify(post)
         }).then(()=>{
             console.log("New post added.");
+            console.log(post);
             setIsPending(false);
         })
 
@@ -42,7 +43,9 @@ const CreatePost = () => {
                 <label>Post author:</label>
                 <select 
                 value={author}
-                onChange={(e)=>setAuthor(e.target.value)}>
+                onChange={(e)=>{setAuthor(e.target.value)
+                    console.log(e.target.value);
+                 }}>
                     <option value="Jeremy">Jeremy</option>
                     <option value="Lawton">Lawton</option>
                 </select>
