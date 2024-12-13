@@ -6,6 +6,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+Run these before starting the first time:
+### `npm install`
+If you get an error saying "React Scripts Not Recognized as internal/external script", try running these:
+### `npm install react-scripts`
+### `npm install react-router-dom`
+
+To start a localhost browser run:
 ### `npm start`
 
 Runs the app in the development mode.\
